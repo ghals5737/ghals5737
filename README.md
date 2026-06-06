@@ -9,6 +9,27 @@
 
 ---
 
+## Selected Work
+
+**[Pulley-Test](https://github.com/ghals5737/Pulley-Test)** — 동시 채점·할당 요청에서 같은 학습지가 중복 할당되는 문제를 비관적 락으로 막고, JPA `Specification` 동적 쿼리와 복합 인덱스로 대량 조회를 설계한 학습지 관리 API.
+
+**[Nudg-Api](https://github.com/ghals5737/Nudg-Api)** — JWT·Google OAuth2 인증과 리프레시 토큰 흐름을 직접 구현하고, 태그 push 시 Docker buildx 빌드 → 셀프호스트 레지스트리 → 배포 webhook으로 이어지는 배포 파이프라인을 자체 구축한 Kotlin/Spring 백엔드.
+
+**[Crypto-Trade](https://github.com/ghals5737/Crypto-Trade)** — 외부 블로그 콘텐츠를 요청 스로틀링과 함께 대량 수집하고 타임스탬프 기반으로 JSON에 적재하는 데이터 수집 파이프라인.
+
+---
+
+## Writing — [blog.hhm.io.kr](https://blog.hhm.io.kr)
+
+내부 동작과 트러블슈팅 과정을 기록합니다.
+
+- [쓰레드 풀과 커넥션 풀 완벽 정리 — 자원 풀링부터 가상 쓰레드까지](https://blog.hhm.io.kr/blog/threadpool-connection-pool-virtual-threads)
+- [API 하나가 병원 전체를 멈췄다 — 단일 API 비대화의 함정](https://blog.hhm.io.kr/blog/fat-api-pagination-no-offset)
+- [배치 작업에서 중복 데이터가 생겼다 — Redis Lock으로 멱등성 잡은 과정](https://blog.hhm.io.kr/blog/batch-idempotency-redis-lock)
+- [슬로우 쿼리를 EXPLAIN으로 잡은 과정 — 단일 인덱스에서 복합 인덱스로 (3s → 1.4s)](https://blog.hhm.io.kr/blog/slow-query-explain-composite-index)
+
+---
+
 ## Tech Stack
 
 **Language**
@@ -32,27 +53,6 @@
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
-
----
-
-## Selected Work
-
-**[Pulley-Test](https://github.com/ghals5737/Pulley-Test)** — 동시 채점·할당 요청에서 같은 학습지가 중복 할당되는 문제를 비관적 락으로 막고, JPA `Specification` 동적 쿼리와 복합 인덱스로 대량 조회를 설계한 학습지 관리 API.
-
-**[Nudg-Api](https://github.com/ghals5737/Nudg-Api)** — JWT·Google OAuth2 인증과 리프레시 토큰 흐름을 직접 구현하고, 태그 push 시 Docker buildx 빌드 → 셀프호스트 레지스트리 → 배포 webhook으로 이어지는 배포 파이프라인을 자체 구축한 Kotlin/Spring 백엔드.
-
-**[Crypto-Trade](https://github.com/ghals5737/Crypto-Trade)** — 외부 블로그 콘텐츠를 요청 스로틀링과 함께 대량 수집하고 타임스탬프 기반으로 JSON에 적재하는 데이터 수집 파이프라인.
-
----
-
-## Writing — [blog.hhm.io.kr](https://blog.hhm.io.kr)
-
-내부 동작과 트러블슈팅 과정을 기록합니다.
-
-- [쓰레드 풀과 커넥션 풀 완벽 정리 — 자원 풀링부터 가상 쓰레드까지](https://blog.hhm.io.kr/blog/threadpool-connection-pool-virtual-threads)
-- [API 하나가 병원 전체를 멈췄다 — 단일 API 비대화의 함정](https://blog.hhm.io.kr/blog/fat-api-pagination-no-offset)
-- [배치 작업에서 중복 데이터가 생겼다 — Redis Lock으로 멱등성 잡은 과정](https://blog.hhm.io.kr/blog/batch-idempotency-redis-lock)
-- [슬로우 쿼리를 EXPLAIN으로 잡은 과정 — 단일 인덱스에서 복합 인덱스로 (3s → 1.4s)](https://blog.hhm.io.kr/blog/slow-query-explain-composite-index)
 
 ---
 
