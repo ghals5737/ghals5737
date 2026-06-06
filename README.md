@@ -11,7 +11,7 @@
 
 ## Selected Work
 
-**[Pulley-Test](https://github.com/ghals5737/Pulley-Test)** — 동시 채점·할당 요청에서 같은 학습지가 중복 할당되는 문제를 비관적 락으로 막고, JPA `Specification` 동적 쿼리와 복합 인덱스로 대량 조회를 설계한 학습지 관리 API.
+**[mykafka](https://github.com/ghals5737/mykafka)** — Kafka의 코어를 직접 구현한 Kotlin 분산 커밋 로그. append-only 세그먼트 로그와 offset 인덱스, Netty 브로커, `FileRegion` 기반 zero-copy 전송, 파티션 단위 순서·병렬성을 protocol/client/broker 모듈로 직접 설계.
 
 **[Nudg-Api](https://github.com/ghals5737/Nudg-Api)** — JWT·Google OAuth2 인증과 리프레시 토큰 흐름을 직접 구현하고, 태그 push 시 Docker buildx 빌드 → 셀프호스트 레지스트리 → 배포 webhook으로 이어지는 배포 파이프라인을 자체 구축한 Kotlin/Spring 백엔드.
 
