@@ -1,58 +1,61 @@
 # 황호민 — Backend Engineer
 
-> 병목을 찾고 구조를 바꾸는 걸 반복해온 4년차 백엔드 엔지니어입니다.  
-> 전국 병원·대학 연구진이 사용하는 의료 플랫폼에서 핵심 API 응답을 최대 85% 단축하고,  
-> 1인 체제로 백엔드·인프라·QA 파이프라인 전체를 직접 설계·운영하고 있습니다.
+대용량 트래픽과 시스템 설계를 다루는 4년차 백엔드 엔지니어입니다.
+프레임워크가 감춰둔 동작을 직접 구현해보며 병목의 원인까지 내려가는 방식으로 일합니다.
+
+- 단일 API 비대화로 멈춘 시스템을 분리해 핵심 응답을 최대 85% 단축
+- 동시 요청·배치 환경의 데이터 무결성을 락과 멱등성 설계로 해결
+- 파일 전송 배포부터 ECS 무중단 배포까지, 인프라를 직접 바꿔가며 운영
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
-**Backend**  
-![Kotlin](https://img.shields.io/badge/Kotlin-7D6AD1?style=flat-square&logo=kotlin&logoColor=white)
+**Language**
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+**Framework & Persistence**
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-6DB33F?style=flat-square&logo=hibernate&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA-59666C?style=flat-square&logo=hibernate&logoColor=white)
+![QueryDSL](https://img.shields.io/badge/QueryDSL-0769AD?style=flat-square&logo=databricks&logoColor=white)
 
-**Frontend**  
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-
-**Infra / DevOps**  
-![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-**DB / Messaging**  
+**Data & Cache**
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
-![SQS](https://img.shields.io/badge/Amazon_SQS-FF4F8B?style=flat-square&logo=amazonsqs&logoColor=white)
+
+**Infra**
+![AWS ECS](https://img.shields.io/badge/AWS_ECS-FF9900?style=flat-square&logo=amazonecs&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+
+**Observability**
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
 
 ---
 
-## 💼 Experience
+## Selected Work
 
-**휴브알엔씨** — Backend Lead (1인 담당) `2025.01 ~ 현재`  
-신경심리검사(SNSB-3) 플랫폼 — 백엔드·인프라·앱·프론트 전담
+**[Pulley-Test](https://github.com/ghals5737/Pulley-Test)** — 동시 채점·할당 요청에서 같은 학습지가 중복 할당되는 문제를 비관적 락으로 막고, JPA `Specification` 동적 쿼리와 복합 인덱스로 대량 조회를 설계한 학습지 관리 API.
 
-**스윗코리아** — Backend & Full-stack Engineer `2023.05 ~ 2024.06`  
-Slack 대체 B2B 협업툴 — 서드파티 플러그인·백오피스 개발
+**[Nudg-Api](https://github.com/ghals5737/Nudg-Api)** — JWT·Google OAuth2 인증과 리프레시 토큰 흐름을 직접 구현하고, 태그 push 시 Docker buildx 빌드 → 셀프호스트 레지스트리 → 배포 webhook으로 이어지는 배포 파이프라인을 자체 구축한 Kotlin/Spring 백엔드.
 
-**웅진씽크빅** — Backend Engineer `2021.08 ~ 2023.04`  
-차세대 통합 LMS — 레거시 성능 개선 및 인프라 안정화
+**[Crypto-Trade](https://github.com/ghals5737/Crypto-Trade)** — 외부 블로그 콘텐츠를 요청 스로틀링과 함께 대량 수집하고 타임스탬프 기반으로 JSON에 적재하는 데이터 수집 파이프라인.
 
 ---
 
-## 📊 GitHub Stats
+## Writing — [blog.hhm.io.kr](https://blog.hhm.io.kr)
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=ghals5737&show_icons=true&theme=radical&hide_border=true)
-[![Solved.ac](http://mazassumnida.wtf/api/v2/generate_badge?boj=ghals0654)](https://solved.ac/ghals0654)
+내부 동작과 트러블슈팅 과정을 기록합니다.
+
+- [쓰레드 풀과 커넥션 풀 완벽 정리 — 자원 풀링부터 가상 쓰레드까지](https://blog.hhm.io.kr/blog/threadpool-connection-pool-virtual-threads)
+- [API 하나가 병원 전체를 멈췄다 — 단일 API 비대화의 함정](https://blog.hhm.io.kr/blog/fat-api-pagination-no-offset)
+- [배치 작업에서 중복 데이터가 생겼다 — Redis Lock으로 멱등성 잡은 과정](https://blog.hhm.io.kr/blog/batch-idempotency-redis-lock)
+- [슬로우 쿼리를 EXPLAIN으로 잡은 과정 — 단일 인덱스에서 복합 인덱스로 (3s → 1.4s)](https://blog.hhm.io.kr/blog/slow-query-explain-composite-index)
 
 ---
 
-## 📫 Contact
+## Contact
 
 [![Gmail](https://img.shields.io/badge/ghals5737@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ghals5737@gmail.com)
